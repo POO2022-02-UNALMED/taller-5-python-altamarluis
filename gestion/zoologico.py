@@ -14,7 +14,7 @@ class Zoologico:
     def cantidadTotalAnimales(self):
         s = 0
         if Zoologico._zonas != None:
-            for z in Zoologico._zonas_zonas:
+            for z in Zoologico._zonas:
                 s += z.cantidadAnimales()
         return s
     
