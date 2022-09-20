@@ -17,12 +17,12 @@ class Ave(Animal):
     @classmethod
     def crearHalcon(cls,n,e,g):
         cls.halcones += 1
-        return Ave.__init__(n,e,"montanas",g,"cafe glorioso")
+        return Ave(n,e,"montanas",g,"cafe glorioso")
 
     @classmethod
     def crearAguila(cls,n,e,g):
         cls.aguilas += 1
-        return Ave.__init__(n,e,"montanas",g,"blanco y amarillo")
+        return Ave(n,e,"montanas",g,"blanco y amarillo")
 
     @classmethod
     def cantidadAves(cls):

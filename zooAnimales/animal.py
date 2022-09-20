@@ -16,7 +16,7 @@ class Animal:
     def totalPorTipo(cls):
         return "Mamiferos: ", cls._m, "\nAves: ", cls._av,  "\nReptiles: ", cls._r, "\nPeces: ", cls._p , "\nAnfibios: ",  cls._an
 
-    def __str__(self):
+    def toString(self):
         if Animal._zona == None:
             return "Mi nombre es ", self._nombre, ", tengo una edad de ", self._edad, ", habito en ", self._habitat, " y mi genero es ", self._genero
         else:

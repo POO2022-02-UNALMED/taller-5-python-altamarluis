@@ -17,12 +17,12 @@ class Mamifero(Animal):
     @classmethod
     def crearCaballo(cls,n,e,g):
         cls.caballos += 1
-        return Mamifero.__init__(n,e,"pradera",g,True,4)
+        return Mamifero(n,e,"pradera",g,True,4)
 
     @classmethod
     def crearLeon(cls,n,e,g):
         cls.leones += 1
-        return Mamifero.__init__(n,e,"selva",g,True,4)
+        return Mamifero(n,e,"selva",g,True,4)
 
     @classmethod
     def cantidadMamiferos(cls):

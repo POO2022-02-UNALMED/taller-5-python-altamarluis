@@ -17,12 +17,12 @@ class Reptil(Animal):
     @classmethod
     def crearIguana(cls,n,e,g):
         cls.iguanas += 1
-        return Reptil.__init__(n,e,"humedal",g,"verde",3)
+        return Reptil(n,e,"humedal",g,"verde",3)
 
     @classmethod
-    def crearAguila(cls,n,e,g):
+    def crearSerpiente(cls,n,e,g):
         cls.serpientes += 1
-        return Reptil.__init__(n,e,"jungla",g,"blanco", 1)
+        return Reptil(n,e,"jungla",g,"blanco", 1)
 
     @classmethod
     def cantidadReptiles(cls):

@@ -17,12 +17,12 @@ class Anfibio(Animal):
     @classmethod
     def crearRana(cls,n,e,g):
         cls.ranas += 1
-        return Anfibio.__init__(n,e,"selva",g,"rojo",True)
+        return Anfibio(n,e,"selva",g,"rojo",True)
 
     @classmethod
     def crearSalamandra(cls,n,e,g):
         cls.salamandras += 1
-        return Anfibio.__init__(n,e,"selva",g,"negro y amarillo", False)
+        return Anfibio(n,e,"selva",g,"negro y amarillo", False)
 
     @classmethod
     def cantidadAnfibios(cls):

@@ -17,12 +17,12 @@ class Pez(Animal):
     @classmethod
     def crearSalmon(cls,n,e,g):
         cls.salmones += 1
-        return Pez.__init__(n,e,"oceano",g,"rojo",6)
+        return Pez(n,e,"oceano",g,"rojo",6)
 
     @classmethod
     def crearBacalao(cls,n,e,g):
         cls.bacalaos += 1
-        return Pez.__init__(n,e,"oceano",g,"gris", 6)
+        return Pez(n,e,"oceano",g,"gris", 6)
 
     @classmethod
     def cantidadPeces(cls):
