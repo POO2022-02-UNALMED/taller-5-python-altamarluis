@@ -14,13 +14,13 @@ class Animal:
 
     @classmethod
     def totalPorTipo(cls):
-        return "Mamiferos: ", cls._m, "\nAves: ", cls._av,  "\nReptiles: ", cls._r, "\nPeces: ", cls._p , "\nAnfibios: ",  cls._an
+        return "Mamiferos : " + str(cls._m) + "\nAves : " + str(cls._av) +  "\nReptiles : " + str(cls._r) + "\nPeces : " + str(cls._p)  + "\nAnfibios : " +  str(cls._an)
 
     def toString(self):
         if Animal._zona == None:
-            return "Mi nombre es ", self._nombre, ", tengo una edad de ", self._edad, ", habito en ", self._habitat, " y mi genero es ", self._genero
+            return "Mi nombre es " + str(self._nombre) + ", tengo una edad de " + str(self._edad) + ", habito en " + str(self._habitat) + " y mi genero es " + str(self._genero)
         else:
-            return "Mi nombre es ", self._nombre, ", tengo una edad de ", self._edad, ", habito en ", self._habitat, " y mi genero es ", self._genero, ", la zona en la que me ubico es ", Animal._zona.getNombre(), ", en el ", Animal._zona.getZoo().getNombre()
+            return "Mi nombre es " + str(self._nombre) + ", tengo una edad de " + str(self._edad) + ", habito en " + str(self._habitat) + " y mi genero es " + str(self._genero) + ", la zona en la que me ubico es " + str(Animal._zona.getNombre()) + ", en el " + str(Animal._zona.getZoo().getNombre())
 
     def movimiento(self):
         return 'desplazarse'
