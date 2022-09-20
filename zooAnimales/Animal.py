@@ -1,5 +1,4 @@
 from typing_extensions import Self
-from gestion import Zona
 
 class Animal:
     _totalAnimales = 0

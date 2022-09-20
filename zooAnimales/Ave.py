@@ -1,6 +1,6 @@
 
 from typing_extensions import Self
-from zooAnimales.Animal import Animal
+from zooAnimales.animal import Animal
 
 
 class Ave(Animal):
