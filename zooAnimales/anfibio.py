@@ -1,4 +1,4 @@
-from typing_extensions import Self
+
 from zooAnimales.animal import Animal
 
 class Anfibio(Animal):
@@ -11,7 +11,7 @@ class Anfibio(Animal):
         self._venenoso = v
         if Anfibio._listado == None:
             Anfibio._listado = []
-        Anfibio._listado.append(Self)
+        Anfibio._listado.append(self)
         Animal.totalAnimales("anfibio")
 
     @classmethod

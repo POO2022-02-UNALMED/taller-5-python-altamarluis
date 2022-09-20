@@ -1,4 +1,4 @@
-from typing_extensions import Self
+
 from zooAnimales.animal import Animal
 
 class Pez(Animal):
@@ -11,7 +11,7 @@ class Pez(Animal):
         self._cantidadAletas = l
         if Pez._listado == None:
             Pez._listado = []
-        Pez._listado.append(Self)
+        Pez._listado.append(self)
         Animal.totalAnimales("pez")
 
     @classmethod

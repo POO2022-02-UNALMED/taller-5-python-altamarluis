@@ -1,4 +1,4 @@
-from typing_extensions import Self
+
 from zooAnimales.animal import Animal
 
 class Mamifero(Animal):
@@ -11,7 +11,7 @@ class Mamifero(Animal):
         self._patas = pa
         if Mamifero._listado == None:
             Mamifero._listado = []
-        Mamifero._listado.append(Self)
+        Mamifero._listado.append(self)
         Animal.totalAnimales("mamifero")
 
     @classmethod

@@ -1,4 +1,5 @@
-from typing_extensions import Self
+
+
 
 class Animal:
     _totalAnimales = 0
@@ -57,7 +58,7 @@ class Animal:
     @classmethod
     def setZona(cls,z):
         cls._zona = z
-        cls._zona.agregarAnimales(Self)
+        cls._zona.agregarAnimales(cls)
 
     @classmethod
     def totalAnimales(cls,t):

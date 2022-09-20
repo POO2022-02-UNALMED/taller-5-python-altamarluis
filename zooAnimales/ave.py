@@ -1,5 +1,4 @@
 
-from typing_extensions import Self
 from zooAnimales.animal import Animal
 
 
@@ -12,7 +11,7 @@ class Ave(Animal):
         self._colorPlumas = c
         if Ave._listado == None:
             Ave._listado = []
-        Ave._listado.append(Self)
+        Ave._listado.append(self)
         Animal.totalAnimales("ave")
 
     @classmethod

@@ -1,4 +1,4 @@
-from typing_extensions import Self
+
 from zooAnimales.animal import Animal
 
 class Reptil(Animal):
@@ -11,7 +11,7 @@ class Reptil(Animal):
         self._largoCola = l
         if Reptil._listado == None:
             Reptil._listado = []
-        Reptil._listado.append(Self)
+        Reptil._listado.append(self)
         Animal.totalAnimales("reptil")
 
     @classmethod
